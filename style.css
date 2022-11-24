@@ -1,0 +1,293 @@
+/*Normalize mini - fichier css de base à intégrer au fichier CSS pour éviter les problème de Marges de la page, a intégrer à TOUS les fichiers CSS */
+
+html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+
+/* Général Corps de texte*/
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+#bloc_page
+{
+
+    width: 1523px;
+    margin: auto;
+}
+/* Police et couleur*/
+
+@font-face
+{
+    font-family: 'Brandon';
+    src: url('police/Fonts/Brandin/Brandon_bld_0.otf');
+    font-weight: normal;
+    font-style: normal; 
+}
+body{
+    font-family: 'Brandon';
+    src: url('police/Fonts/Brandin/Brandon_bld_0.otf');
+}
+
+
+h5{
+    color: black;
+    font-size: 1.5em;
+}
+.black
+{
+    color: black;
+}
+.grey
+{
+    color: grey;
+}
+
+h1, h2
+{
+    color: white;
+    font-size: 2.5em;
+}
+h4{
+ color: rgb(196, 195, 195);   
+ font-size: 1.4em;
+}
+
+section h3{
+    color: white;
+    font-size: 1.3em;
+    padding-top: 5%;
+}
+aside p{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+aside p{
+    color: black;
+}
+
+   
+ /* Liste à Puce */   
+
+ ul {
+    list-style-type: none;
+  }
+
+
+/* Header */ 
+
+ header nav
+{
+   
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1%;
+       
+} 
+
+/* Section*/
+
+section
+{
+    
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 0;
+    
+
+}
+
+.photo
+{
+    
+    position: relative;
+    
+    
+   
+    
+}
+
+.photo>img
+{
+    
+    
+    width: 100%;
+    height: auto;
+
+}
+
+
+.text, .cadre
+
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.text{
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#border{
+    border: white solid 5px;
+    padding: 20px 20px 20px 20px;
+    font-size: 0.5em;
+    
+    
+}
+
+/* Aside */
+
+aside{
+    
+     
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: rgb(221, 219, 219);
+    
+
+}
+
+h4
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 3%;
+    
+    
+}
+
+
+
+h4 p 
+{
+    display: flex;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+#aside_end
+{
+    display: flex;
+    justify-content: end;
+    margin-top: 5%;
+    
+   
+}
+
+#signature
+{
+    display: flex;
+    padding-right: 0%;
+    
+}
+
+#points
+{
+    
+    display: flex;
+    width: 40%;
+    
+}
+
+/* Footer*/
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    
+    
+    
+}
+#posts
+{
+    padding-right: 2%;
+    display: flex
+    
+    
+    
+}
+
+#insta
+{
+    padding-right: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+#insta1{
+    display: flex;
+    padding-top: 5%;
+}
+
+#insta2{
+    display: flex;
+}
+
+#tweet{
+   
+    width: 20%;
+    display: flex;
+}
+
+
+
+#sub1
+{
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+#sub2
+{
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+#sub img{
+    
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    top:4%;
+    left: 82%;
+    display:flex;
+    
+    
+    
+}
+#bottom
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+
+
+
+
+
